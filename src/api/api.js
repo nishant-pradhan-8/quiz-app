@@ -8,7 +8,7 @@ function useAxiosFetch(selection, difficulty, category, limit) {
   const [error, setError] = useState(null);
   const API = "https://quizapi.io/api/v1/questions";
   const apiKey = process.env.REACT_APP_API_KEY;
-  console.log(apiKey)
+  
   useEffect(() => {
     let isMounted = true;
     const fetchQuiz = async () => {
