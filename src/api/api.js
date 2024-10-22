@@ -7,7 +7,8 @@ function useAxiosFetch(selection, difficulty, category, limit) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const API = "https://quizapi.io/api/v1/questions";
-
+  const apiKey = process.env.REACT_APP_API_KEY;
+  console.log(apiKey)
   useEffect(() => {
     let isMounted = true;
     const fetchQuiz = async () => {
@@ -15,7 +16,7 @@ function useAxiosFetch(selection, difficulty, category, limit) {
       try {
         const response = await axios.get(API, {
           params: {
-            apiKey: "43WYIzQckRDaxWcr7Z9TDUpQrrzNLuPFaxvJk2dl",
+            apiKey: apiKey,
             limit: `${limit}`,
             category: `${category}`,
             difficulty: `${difficulty}`,
