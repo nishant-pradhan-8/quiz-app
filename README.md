@@ -11,7 +11,7 @@
         <li><strong>Theme Switch:</strong>Users can toggle between light and dark mode as per their preferences.</li>
     </ul>
     <h2>Demo</h2>
-    <p>You can check out the live demo of the app <a href="https://nishant-pradhan8.github.io/quiz-app/">here</a>.</p>
+    <p>You can check out the live demo of the app <a href="https://nishant-pradhan-8.github.io/quiz-app/">here</a>.</p>
     <h2>Technologies Used</h2>
 <ul>
     <li><strong>React:</strong> For building the user interface.</li>
